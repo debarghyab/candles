@@ -1,0 +1,64 @@
+{
+  "name": "candles",
+  "version": "1.0.0",
+  "description": "Investment tracking app",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server --config projects/gui/webpack.config.js --hot",
+    "build": "NODE_ENV=production webpack --config projects/gui/webpack.config.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.3.0",
+    "react-ts-tradingview-widgets": "^1.0.11",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@testing-library/react": "^12.1.2",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/webpack-env": "^1.18.0",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-react-transform": "^3.0.0",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.4.3",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0",
+    "webpack-hot-middleware": "^2.25.1",
+    "webpack-manifest-plugin": "^4.0.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "Firefox ESR"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debarghyab/candles.git"
+  },
+  "author": "Debarghya Bhattacharya (@debarghyab)",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/debarghyab/candles/issues"
+  },
+  "homepage": "https://github.com/debarghyab/candles#readme"
+}
